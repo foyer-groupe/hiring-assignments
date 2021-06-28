@@ -1,0 +1,30 @@
+[
+  {
+    "city": "Baku",
+    "temperature": 35
+  },
+  {
+    "city": "Tehran",
+    "temperature": 30
+  },
+  {
+    "city": "Beijing",
+    "temperature": 36
+  },
+  {
+    "city": "Astana",
+    "temperature": 31
+  },
+  {
+    "city": "London",
+    "temperature": 25
+  },
+  {
+    "city": "Paris",
+    "temperature": 26
+  },
+  {
+    "city": "Podgorica",
+    "temperature": 28
+  }
+]
