@@ -1,0 +1,38 @@
+:host {
+  --header-height: 64px;
+
+  font-size: 16px;
+  display: grid;
+
+  grid-template: auto 1fr auto / auto 1fr auto;
+
+  header {
+    color: white;
+    grid-column: 1 / 4;
+    height: var(--header-height);
+    background: lemonchiffon;
+
+    span  {
+      color: black;
+      background: white;
+    }
+  }
+
+  .left {
+    background: #bbcdec;
+    color: white;
+    grid-column: 1 / 2;
+    min-width: 80px;
+    padding: 24px;
+  }
+
+  main {
+    background: #F0F5FB;
+    grid-column: 2 / 3;
+    min-height: calc(100vh - var(--header-height));
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+}
