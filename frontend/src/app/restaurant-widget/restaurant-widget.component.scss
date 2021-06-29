@@ -1,0 +1,13 @@
+:host {
+  background: lightsteelblue;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  // JOE: flex en colonne fait +- ce que je désire, mais j'ai du mal à forcer la partie "available from" en bas
+  // J'ai utilisé absolute mais quand je réduis la taille de ma fenêtre pour un plus petit device, ça overlap un peu avec la partie du menu.
+  .cities {
+    position: absolute;
+    bottom: 16px;
+  }
+}
