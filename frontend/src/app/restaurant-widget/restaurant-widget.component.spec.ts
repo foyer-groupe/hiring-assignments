@@ -1,8 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RestaurantWidgetComponent } from './restaurant-widget.component';
-import {ConsumablesService} from "../service/consumables.service";
-import {ConsumablesServiceMock} from "../tests/mocks";
 
 describe('RestaurantWidgetComponent', () => {
   let component: RestaurantWidgetComponent;
@@ -11,12 +9,7 @@ describe('RestaurantWidgetComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ RestaurantWidgetComponent ],
-      providers: [
-        {
-          provide: ConsumablesService,
-          useClass: ConsumablesServiceMock
-        }
-      ]
+      providers: []
     })
     .compileComponents();
   });

@@ -16,7 +16,7 @@ import {ConsumablesService} from "../service/consumables.service";
 })
 export class RestaurantWidgetComponent implements OnInit, AfterViewInit {
 
-  constructor(private _consumablesService: ConsumablesService) { }
+  constructor(private readonly _consumablesService: ConsumablesService) { }
   cities: any;
   meals: any;
 
@@ -31,6 +31,7 @@ export class RestaurantWidgetComponent implements OnInit, AfterViewInit {
     this._consumablesService.getRestaurantCities().subscribe(_ => this.cities = _);
   }
 
+  // JOE: We need to display the drinks first, followed by the food, I used async and await to call both APIs simultaneously
   async getMenu(): Promise<string[]> {
     var drinks = await this._consumablesService.getDrinksMenu().toPromise();
     var foods = await this._consumablesService.getFoodMenu().toPromise();
