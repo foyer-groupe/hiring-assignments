@@ -5,7 +5,7 @@
   position: relative;
 
   // JOE: flex with column doesn't do exactly what I want to, as the "available from" bit doesn't go to the bottom
-  // I used absolute, but if I try running it on mobile, it does overlap a bit with the menu
+  // I used position: absolute, but if I try running it on mobile, it does overlap a bit with the menu
   .cities {
     position: absolute;
     bottom: 16px;
