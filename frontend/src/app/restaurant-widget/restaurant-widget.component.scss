@@ -4,8 +4,8 @@
   flex-direction: column;
   position: relative;
 
-  // JOE: flex en colonne fait +- ce que je désire, mais j'ai du mal à forcer la partie "available from" en bas
-  // J'ai utilisé absolute mais quand je réduis la taille de ma fenêtre pour un plus petit device, ça overlap un peu avec la partie du menu.
+  // JOE: flex with column doesn't do exactly what I want to, as the "available from" bit doesn't go to the bottom
+  // I used absolute, but if I try running it on mobile, it does overlap a bit with the menu
   .cities {
     position: absolute;
     bottom: 16px;
